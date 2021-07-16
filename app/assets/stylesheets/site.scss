@@ -1,0 +1,85 @@
+// Place all the styles related to the site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.grid .block {
+    background: white;
+    padding: 10px 10px;
+    z-index: 1;
+}
+
+.add {
+    color: black;
+}
+
+.delete_btn {
+    background: indianred;
+    color: white;
+    border-radius: 15px 15px 20px 20px;
+    border: 1px solid lightgray;
+    z-index: 1;
+    box-shadow: none;
+}
+
+.block {
+    padding: 20px 10px 20px 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    background-color: burlywood;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.block>img:first-child {
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 8em;
+}
+
+.block h3 {
+    color: rebeccapurple;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+}
+
+.block h3 em {
+    padding: 0.25em;
+    background-color: #eddbff;
+    border-radius: 4px;
+}
+
+.block p,
+ul>li {
+    color: #757575;
+    line-height: 1.5;
+}
+
+.button {
+    /* Reset text link default */
+    text-decoration: none;
+    background-color: rebeccapurple;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.block+.block {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 40.0625em) {
+    .block-row {
+        display: block;
+        grid-template-columns: repeat(3, 20%);
+    }
+
+    .block {
+        width: 80%;
+        margin-left: 5%;
+        font-size: 14px;
+
+    }
+}

@@ -1,0 +1,57 @@
+/* To Navigation Style */
+.top {
+    background-color: burlywood;
+    text-transform: uppercase;
+    width: 80%;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    z-index: 20;
+    height: 50px;
+    padding: 1em 1.4em;
+    font-size: 0.8em;
+    font-weight: bolder;
+    line-height: 2.2;
+    -webkit-box-shadow: 7px 10px 6px -6px burlywood;
+    -moz-box-shadow: 7px 10px 6px -6px burlywood;
+    box-shadow: 7px 10px 6px -6px burlywood;
+}
+
+.top a {
+    padding: 0 1em;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+
+.top a:hover {
+    color: #e74c3c;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.top span.right {
+    float: right;
+}
+
+.top span.right a {
+    float: left;
+    display: block;
+}
+
+.codrops-icon:before {
+    font-family: 'codropsicons';
+    margin: 0 4px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.active {
+    color: blueviolet;
+    z-index: 2;
+    border: 1px solid lightgray;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) ease-out border;
+}

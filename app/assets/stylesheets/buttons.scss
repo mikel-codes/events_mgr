@@ -1,0 +1,52 @@
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #3498db;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+$indianred: indianred;
+
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+
+    padding: 1.2em 2.0em;
+    text-decoration: none;
+    text-align: center;
+
+    &.first {
+        color: $red;
+        border: 2px solid $red;
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-out;
+
+        &:hover {
+            box-shadow: 0 0 40px 40px $red inset;
+        }
+
+        &:hover,
+        &:focus {
+            color: white;
+            outline: 0;
+        }
+    }
+
+    .cancel {
+        color: indianred;
+        border: 2px solid indianred;
+    }
+
+    .submit {
+        color: $turquoise;
+        border: 2px solid $turquoise;
+    }
+}
